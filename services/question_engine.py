@@ -1,7 +1,8 @@
 # services/question_engine.py
 from datetime import datetime
 import json
-from services.openai_client import get_openai_client
+from .openai_client import get_openai_client
+# from services.openai_client import get_openai_client
 
 def build_interview_blueprint(profile: dict, config: dict) -> dict:
     interview_type = config.get("interview_type", "Admissions")
